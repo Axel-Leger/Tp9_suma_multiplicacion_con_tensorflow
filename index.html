@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.14.0/dist/tf.min.js"></script>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    textarea { width: 100%; height: 100px; margin-bottom: 20px; }
+  </style>
+</head>
+<body>
+  <h1>Suma y Multiplicación de Matrices con TensorFlow</h1>
+
+  <label>Filas: <input type="number" id="filas" min="1" value="2"></label>
+  <label>Columnas: <input type="number" id="columnas" min="1" value="2"></label>
+  <button onclick="generarMatrices()">Generar y Calcular</button>
+
+  <h3>Matriz A:</h3>
+  <textarea id="matrizA" readonly></textarea>
+
+  <h3>Matriz B:</h3>
+  <textarea id="matrizB" readonly></textarea>
+
+  <h3>Suma (A + B):</h3>
+  <textarea id="suma" readonly></textarea>
+
+  <h3>Multiplicación (A x B):</h3>
+  <textarea id="multiplicacion" readonly></textarea>
+
+  <script src="srcipt.js"></script>
+</body>
+</html>
